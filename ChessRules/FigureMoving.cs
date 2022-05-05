@@ -63,34 +63,34 @@ namespace ChessDll
         /// <summary>
         /// The difference in X coordinates of the figure.
         /// </summary>
-        public int DeltaX { get { return To.X - From.X; } }
+        public int DeltaX => To.X - From.X;
 
         /// <summary>
         /// The difference in Y coordinates of the figure.
         /// </summary>
-        public int DeltaY { get { return To.Y - From.Y; } }
+        public int DeltaY => To.Y - From.Y;
 
 
         /// <summary>
         /// The absolute difference of the figure's X coordinates.
         /// </summary>
-        public int AbsDeltaX { get { return Math.Abs(DeltaX); } }
+        public int AbsDeltaX => Math.Abs(DeltaX);
 
         /// <summary>
         /// The absolute difference of the figure's Y coordinates.
         /// </summary>
-        public int AbsDeltaY { get { return Math.Abs(DeltaY); } }
+        public int AbsDeltaY => Math.Abs(DeltaY);
 
 
         /// <summary>
         /// The difference sign in X coordinates of the figure.
         /// </summary>
-        public int SignX { get { return Math.Sign(DeltaX); } }
+        public int SignX => Math.Sign(DeltaX);
 
         /// <summary>
         /// The difference sign in Y coordinates of the figure.
         /// </summary>
-        public int SignY { get { return Math.Sign(DeltaY); } }
+        public int SignY => Math.Sign(DeltaY);
 
 
         /// <summary>

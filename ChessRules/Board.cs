@@ -16,7 +16,7 @@ namespace ChessDll
         /// <summary>
         /// An array of chess pieces on a chessboard for two coordinates.
         /// </summary>
-        Figure[,] figures;
+        readonly Figure[,] figures;
 
         /// <summary>
         /// Color of the current move.
@@ -214,8 +214,10 @@ namespace ChessDll
         /// <returns>There is a chess CHECK or not.</returns>
         public bool IsCheck()
         {
-            Board beforeMove = new Board(Fen);
-            beforeMove.MoveColor = MoveColor.FlipColor();
+            Board beforeMove = new Board(Fen)
+            {
+                MoveColor = MoveColor.FlipColor()
+            };
 
             return beforeMove.CanEatKing();
         }

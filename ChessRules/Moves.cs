@@ -13,7 +13,7 @@
         /// <summary>
         /// A chess board.
         /// </summary>
-        private Board board;
+        private readonly Board board;
 
 
         /// <summary>
